@@ -55,7 +55,7 @@ export const HeaderNav = () => {
               to="/barcelona"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
-              {"BARCELONA"}
+              {t("Ciudad.Barcelona")}
             </NavLink>
           </li>
           <li>
@@ -63,7 +63,7 @@ export const HeaderNav = () => {
               to="/new_york"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
-              {"NEW YORK"}
+              {t("Ciudad.NuevaYork")}
             </NavLink>
           </li>
           <li>
@@ -71,7 +71,7 @@ export const HeaderNav = () => {
               to="/madrid"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
-              {"MADRID"}
+              {t("Ciudad.Madrid")}
             </NavLink>
           </li>
           <li>
@@ -79,7 +79,7 @@ export const HeaderNav = () => {
               to="/london"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
-              {"LONDON"}
+              {t("Ciudad.Londres")}
             </NavLink>
           </li>
           <li>

@@ -9,7 +9,7 @@ export const Footer = () => {
           
           <div>
             <a
-              href="mailto:planyourholidays777@gmail.com"
+              href="https://www.getyourguide.com?partner_id=QQKSFZJ&cmp=share_to_earn"
               target="blank"
               height="20px"
               width="20px"

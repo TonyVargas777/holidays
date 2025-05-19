@@ -20,7 +20,7 @@ export const Contacto = () => {
         
 
         <article>
-          <a href="mailto:PlanYourHolidays777@gmail.com" target="blank" alt="email">
+          <a href="https://www.getyourguide.com?partner_id=QQKSFZJ&cmp=share_to_earn" target="blank" alt="email">
             <img
               className="red"
               align="center"
@@ -31,8 +31,8 @@ export const Contacto = () => {
             ></img>
           </a>
         </article>
-        <a href="mailto:PlanYourHolidays777@gmail.com" target="blank" alt="email" className="contacto_a">
-          PlanYourHolidays777@gmail.com
+        <a href="https://www.getyourguide.com?partner_id=QQKSFZJ&cmp=share_to_earn" target="blank" alt="email" className="contacto_a">
+          PlanYourHolidays
         </a>
       </div>
     </section>
