@@ -688,9 +688,6 @@ nav {
 @media (max-width: 1030px) {
   :root {
     width: 100%;
-    background-size: 10%;
-
-    background-attachment: fixed;
   }
 
   html {
@@ -703,7 +700,6 @@ nav {
     flex-direction: column;
     justify-content:space-around;
     align-items: center;
-
   }
 
   .header {
@@ -903,7 +899,16 @@ nav {
     width: 90%;
     background-size: 10%;
   }
-
+  .layout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+  }
+  .content {
+    width: 90%;
+  }
   .education {
     width: 87%;
   }
@@ -948,45 +953,12 @@ nav {
     padding: 15px;
   }
 
-  .cv {
-    max-width: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   .red {
     margin: 0px;
     padding: 0px;
   }
 
-  .my_self {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
 
-  .photo {
-    width: 40%;
-    display: grid;
-    place-items: center;
-  }
-
-  .photo img {
-    width: 100%;
-    border: 12px double blue;
-    border-radius: 300px;
-    padding: 5%;
-  }
-
-  .my_self_type {
-    padding-bottom: 5%;
-    display: flex;
-    flex-direction: columnn;
-    margin-left: 0%;
-  }
 
   .footer {
     width: 100%;
@@ -1009,21 +981,4 @@ nav {
     }
   }
 
-}
-
-@keyframes float {
-  0% {
-    box-shadow: 0 0px 15px 0px blue;
-    transform: translatey(0px);
-  }
-
-  50% {
-    box-shadow: 0 10px 15px 0px red;
-    transform: translatey(-10px);
-  }
-
-  100% {
-    box-shadow: 0 0px 15px 0px blue;
-    transform: translatey(0px);
-  }
 }
