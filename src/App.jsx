@@ -4,6 +4,7 @@ import { MisRutas } from "./Router/MisRutas";
 import BotonSubir from "../src/components/BotonSubir";
 import { useTranslation } from "react-i18next";
 
+
 function App() {
   const [t, i18n] = useTranslation("global");
 

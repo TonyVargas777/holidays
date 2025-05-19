@@ -1,13 +1,11 @@
 import React from "react";
 import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import { Inicio } from "../components/Inicio";
-import { Portafolio } from "../components/Portafolio";
-import { Portafolio_ds } from "../components/Portafolio_ds";
-import { Servicios } from "../components/Servicios";
-import { Curriculum } from "../components/Curriculum";
 import { Contacto } from "../components/Contacto";
 import { HeaderNav } from "../components/layout/HeaderNav";
 import { Footer } from "../components/layout/Footer";
+import { Home } from "../components/Home";
+import { Barcelona } from "../components/Barcelona";
 
 export const MisRutas = () => {
   return (
@@ -17,11 +15,9 @@ export const MisRutas = () => {
         <Routes>
           <Route path="/" element={<Navigate to="/inicio" />} />
           <Route path="/inicio" element={<Inicio />} />
-          <Route path="/portafolio" element={<Portafolio />} />
-          <Route path="/portafolio_ds" element={<Portafolio_ds />} />
-          <Route path="/servicios" element={<Servicios />} />
-          <Route path="/curriculum" element={<Curriculum />} />
           <Route path="/contacto" element={<Contacto />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/barcelona" element={<Barcelona />} />
           <Route path="*" element={<h1 className="home">Error 404</h1>} />
         </Routes>
       </section>

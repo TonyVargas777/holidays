@@ -1,48 +1,33 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Es_Flag from "/public/spain_c.png";
 import Cat_Flag from "/public/catalonia_c.png";
 import En_Flag from "/public/usa_c.png";
+import IdiomaIcon from "/public/idioma.png"; 
 
 export const HeaderNav = () => {
   const [t, i18n] = useTranslation("global");
-  const location = useLocation();
-  const [showDropdown, setShowDropdown] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
   const currentLanguage = localStorage.getItem("language") || "es";
 
-  const getCurrentFlag = () => {
-    switch (currentLanguage) {
-      case "es":
-        return Es_Flag;
-      case "cat":
-        return Cat_Flag;
-      case "en":
-        return En_Flag;
-      default:
-        return Es_Flag;
-    }
-  };
-
   const languages = [
-    { code: "es", label: "Spanish", flag: Es_Flag },
-    { code: "cat", label: "Catalan", flag: Cat_Flag },
-    { code: "en", label: "English", flag: En_Flag },
+    { code: "es", flag: Es_Flag },
+    { code: "cat", flag: Cat_Flag },
+    { code: "en", flag: En_Flag },
   ];
 
   const handleLanguageChange = (language) => {
     i18n.changeLanguage(language);
     localStorage.setItem("language", language);
-    setShowDropdown(false);
+    setShowPopup(false);
   };
 
-  const toggleDropdown = () => {
-    setShowDropdown(!showDropdown);
+  const togglePopup = () => {
+    setShowPopup(!showPopup);
   };
-
-  // Manejo del tema (dark/light)
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
   useEffect(() => {
     document.documentElement.classList.remove("light", "dark");
@@ -52,67 +37,105 @@ export const HeaderNav = () => {
 
   return (
     <header className="header">
-      <li>
-        <NavLink to="/inicio" className="port">
-          GET YOUR HOLIDAYS
-        </NavLink>
-      </li>
+      
+        <img src="/tituloPYH.png" className="titulo" alt="PLAN YOUR HOLIDAYS" />
+      
       <nav>
         <ul>
           <li>
-            <NavLink to="/portafolio_dS" className={({ isActive }) => (isActive ? "active" : "")}>
-              {"DATA"}
+            <NavLink
+              to="/inicio"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              {t("HeaderNav.home")}
             </NavLink>
           </li>
           <li>
-            <NavLink to="/portafolio" className={({ isActive }) => (isActive ? "active" : "")}>
-              {"WEB"}
+            <NavLink
+              to="/barcelona"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              {"BARCELONA"}
             </NavLink>
           </li>
           <li>
-            <NavLink to="/curriculum" className={({ isActive }) => (isActive ? "active" : "")}>
-              {t("Curriculum.education")}
+            <NavLink
+              to="/new_york"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              {"NEW YORK"}
             </NavLink>
           </li>
           <li>
-            <NavLink to="/servicios" className={({ isActive }) => (isActive ? "active" : "")}>
-              {t("HeaderNav.services")}
+            <NavLink
+              to="/madrid"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              {"MADRID"}
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contacto" className={({ isActive }) => (isActive ? "active" : "")}>
+            <NavLink
+              to="/london"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              {"LONDON"}
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/contacto"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
               {t("HeaderNav.contact")}
             </NavLink>
           </li>
-
-          <div className="language-selector">
-            <button onClick={toggleDropdown} className="dropdown-btn">
-              <img src={getCurrentFlag()} alt="Current Language" width="24" height="24" />
+      <div className="theme_language">
+          {/* Botón para mostrar popup de idiomas */}
+          <li>
+            <button onClick={togglePopup} className="popup-btn">
+              <img src={IdiomaIcon} alt="Idioma" width="24" height="24" />
             </button>
-            {showDropdown && (
-              <ul className="dropdown-menu">
-                {languages
-                  .filter((lang) => lang.code !== currentLanguage)
-                  .map((lang) => (
-                    <li key={lang.code} onClick={() => handleLanguageChange(lang.code)}>
-                      <img width="24" height="24" src={lang.flag} alt={`${lang.label} Flag`} />
-                    </li>
-                  ))}
-              </ul>
-            )}
-          </div>
+          </li>
 
-          {/* Botón de cambio de tema */}
-          <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
-          <img 
-    src="/cambiar.png" 
-    alt="Theme Toggle" 
-    width="25" 
-    height="20"
-  />
-          </button>
+          {/* Botón cambio de tema */}
+          <li>
+            <button
+              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+              className="popup-btn"
+            >
+              <img
+                src="/cambiar.png"
+                alt="Theme Toggle"
+                width="24"
+                height="24"
+              />
+            </button>
+          </li>
+          </div>
         </ul>
       </nav>
+
+      {/* Popup para selector de idioma */}
+      {showPopup && (
+        <div className="language-popup">
+          <div className="popup-content">
+            {languages.map((lang) => (
+              <button
+                key={lang.code}
+                className="language-option"
+                onClick={() => handleLanguageChange(lang.code)}
+              >
+                <img src={lang.flag} alt={lang.label} width="30" height="30" />
+                <span>{lang.label}</span>
+              </button>
+            ))}
+            <button className="close-popup" onClick={() => setShowPopup(false)}>
+              ✖
+            </button>
+          </div>
+        </div>
+      )}
     </header>
   );
 };
