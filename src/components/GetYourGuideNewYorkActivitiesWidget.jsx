@@ -14,6 +14,12 @@ const GetYourGuideNewYorkActivitiesWidget = () => {
         return "en-US";
       case "cat":
         return "ca-ES";
+      case "it":
+        return "it-IT";
+      case "fr":
+        return "fr-FR";
+      case "ge":
+        return "de-DE";        
       default:
         return "en-US";
     }

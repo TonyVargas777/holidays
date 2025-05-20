@@ -1,7 +1,7 @@
 {
   "HeaderNav": {
-    "home": "HOME",
-    "contact": "CONTACT"
+    "home": "STARTSEITE",
+    "contact": "KONTAKT"
   },
   "Ciudad": {
     "Barcelona": "Barcelona",
@@ -10,6 +10,6 @@
     "Londres": "London"
   },
   "Contacto": {
-    "title": "CONTACT"
+    "title": "Kontakt"
   }
 }

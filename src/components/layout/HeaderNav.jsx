@@ -2,9 +2,12 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Es_Flag from "/public/spain_c.png";
-import Cat_Flag from "/public/catalonia_c.png";
+// import Cat_Flag from "/public/catalonia_c.png";
 import En_Flag from "/public/usa_c.png";
-import IdiomaIcon from "/public/idioma.png"; 
+import Fr_Flag from "/public/france_c.png";
+import Ge_Flag from "/public/germany_c.png";
+import It_Flag from "/public/italy_c.png";
+import IdiomaIcon from "/public/idioma.png";
 
 export const HeaderNav = () => {
   const [t, i18n] = useTranslation("global");
@@ -17,6 +20,9 @@ export const HeaderNav = () => {
     { code: "es", flag: Es_Flag },
     // { code: "cat", flag: Cat_Flag },
     { code: "en", flag: En_Flag },
+    { code: "fr", flag: Fr_Flag },
+    { code: "ge", flag: Ge_Flag },
+    { code: "it", flag: It_Flag },
   ];
 
   const handleLanguageChange = (language) => {
@@ -37,9 +43,9 @@ export const HeaderNav = () => {
 
   return (
     <header className="header">
-      
-        <img src="/tituloPYH.png" className="titulo" alt="PLAN YOUR HOLIDAYS" />
-      
+
+      <img src="/tituloPYH.png" className="titulo" alt="PLAN YOUR HOLIDAYS" />
+
       <nav>
         <ul>
           <li>
@@ -90,28 +96,28 @@ export const HeaderNav = () => {
               {t("HeaderNav.contact")}
             </NavLink>
           </li>
-      <div className="theme_language">
-          {/* Botón para mostrar popup de idiomas */}
-          <li>
-            <button onClick={togglePopup} className="popup-btn">
-              <img src={IdiomaIcon} alt="Idioma" width="24" height="24" />
-            </button>
-          </li>
+          <div className="theme_language">
+            {/* Botón para mostrar popup de idiomas */}
+            <li>
+              <button onClick={togglePopup} className="popup-btn">
+                <img src={IdiomaIcon} alt="Idioma" width="24" height="24" />
+              </button>
+            </li>
 
-          {/* Botón cambio de tema */}
-          <li>
-            <button
-              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-              className="popup-btn"
-            >
-              <img
-                src="/cambiar.png"
-                alt="Theme Toggle"
-                width="24"
-                height="24"
-              />
-            </button>
-          </li>
+            {/* Botón cambio de tema */}
+            <li>
+              <button
+                onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+                className="popup-btn"
+              >
+                <img
+                  src="/cambiar.png"
+                  alt="Theme Toggle"
+                  width="24"
+                  height="24"
+                />
+              </button>
+            </li>
           </div>
         </ul>
       </nav>
