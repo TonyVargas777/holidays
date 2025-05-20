@@ -17,18 +17,24 @@ const GetYourGuideMultiCityWidget = () => {
         { id: "57", name: "London", ref: widgetRefs.london },
     ];
 
-    const getLocaleCode = (lang) => {
-        switch (lang) {
-            case "es":
-                return "es-ES";
-            case "en":
-                return "en-US";
-            case "cat":
-                return "ca-ES";
-            default:
-                return "en-US";
-        }
-    };
+  const getLocaleCode = (lang) => {
+    switch (lang) {
+      case "es":
+        return "es-ES";
+      case "en":
+        return "en-US";
+      case "cat":
+        return "ca-ES";
+      case "it":
+        return "it-IT";
+      case "fr":
+        return "fr-FR";
+      case "ge":
+        return "de-DE";        
+      default:
+        return "en-US";
+    }
+  };
 
     const loadGYGScript = () => {
         if (!document.getElementById("gyg-widget-script")) {
