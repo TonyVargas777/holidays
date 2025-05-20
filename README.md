@@ -1,34 +1,33 @@
-# Proyecto de Portafolio MERN Stack
+# 🌍 Plan Your Holidays
 
-## Desarrollador: Tony Vargas
+**Plan Your Holidays** es una aplicación web desarrollada en **React + Vite** que permite explorar actividades turísticas en diversas ciudades mediante la integración con el widget oficial de **GetYourGuide**.
 
-¡Bienvenido/a al repositorio de mi proyecto de portafolio basado en la pila MERN Stack (MongoDB, Express.js, React.js y Node.js)!
+## 🚀 Características
 
-### Descripción del Proyecto
-Este proyecto representa mi portafolio personal, diseñado y desarrollado para destacar mis habilidades, proyectos y experiencia como desarrollador de software.
+- 🏙️ Integración con el widget de GetYourGuide para actividades turísticas por ciudad
+- 🌐 Internacionalización (i18n) en Español, Català e Inglés
+- 🌓 Soporte para modo claro y oscuro
+- ⚙️ Estructura modular y limpia usando React + Vite
+- 📱 Diseño responsive optimizado para móviles
 
-### Tecnologías Utilizadas
-- **MongoDB:** Base de datos NoSQL que proporciona almacenamiento de datos eficiente y escalable.
-- **Express.js:** Framework web para Node.js que facilita la creación de aplicaciones web y APIs.
-- **React.js:** Biblioteca de JavaScript para construir interfaces de usuario interactivas y reutilizables.
-- **Node.js:** Entorno de ejecución para JavaScript del lado del servidor.
+## 📸 Capturas de pantalla
 
-### Características Principales
-1. **Diseño Responsivo:** La interfaz del portafolio se adapta a diferentes dispositivos, asegurando una experiencia de usuario óptima en cualquier pantalla.
-2. **Sección de Proyectos:** Muestra una selección de proyectos destacados con descripciones detalladas y enlaces a los repositorios correspondientes.
-3. **Sobre Mí:** Una breve biografía y descripción de mis habilidades y experiencia como desarrollador de software.
-4. **Formulario de Contacto:** Permite a los visitantes ponerse en contacto conmigo directamente desde el sitio web.
+(¡Añade aquí algunas imágenes de tu aplicación!)
 
-### Instrucciones de Instalación
-1. Clona este repositorio en tu máquina local: `git clone https://github.com/TonyVargas777/portafolio.git`
-2. Navega al directorio del proyecto.
-3. Instala las dependencias: `npm install`
-4. Inicia la aplicación cliente: `npm run dev`
+## 🔧 Tecnologías utilizadas
 
-### Contacto
-Si tienes preguntas, sugerencias o simplemente quieres saludar, no dudes en contactarme:
-- **Nombre:** Tony Vargas
-- **Correo Electrónico:** tonacovargas@hotmail.com
-- **Sitio Web:** [www.tonyvargasdev.com](https://www.tonyvargasdev.com)
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [react-i18next](https://react.i18next.com/)
+- [GetYourGuide Widgets](https://partner.getyourguide.com/)
+- CSS personalizado
 
-¡Gracias por visitar mi portafolio MERN Stack! Espero que disfrutes explorando mi trabajo y aprendizaje.
+## 📦 Instalación
+
+Clona el repositorio y ejecuta el proyecto localmente:
+
+```bash
+git clone https://github.com/TonyVargas777/holidays.git
+cd holidays
+npm install
+npm run dev
