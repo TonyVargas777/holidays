@@ -1,16 +1,16 @@
 import React from "react";
-import Listado_Barcelona from "./Listado_Barcelona";
+import Listado_Madrid from "./Listado_Madrid";
 import { useTranslation } from "react-i18next";
 
-export const Barcelona = () => {
+export const Madrid = () => {
   const [t, i18n] = useTranslation("global");
 
   return (
     <section className="page">
       <div className="education">
-        <h2 className="heading">{t("Ciudad.Barcelona")}</h2>
+        <h2 className="heading">{t("Ciudad.Madrid")}</h2>
       </div>
-      <Listado_Barcelona />
+      <Listado_Madrid />
     </section>
   );
 };
