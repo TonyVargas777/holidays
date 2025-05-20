@@ -15,7 +15,7 @@ export const HeaderNav = () => {
 
   const languages = [
     { code: "es", flag: Es_Flag },
-    { code: "cat", flag: Cat_Flag },
+    // { code: "cat", flag: Cat_Flag },
     { code: "en", flag: En_Flag },
   ];
 
