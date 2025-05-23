@@ -14,6 +14,8 @@ const GetYourGuideActivitiesWidget = ({ city }) => {
       case "it": return "it-IT";
       case "fr": return "fr-FR";
       case "ge": return "de-DE";
+      case "ko": return "ko-KR";
+      case "ja": return "ja-JP";    
       default: return "en-US";
     }
   };

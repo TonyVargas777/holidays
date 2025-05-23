@@ -9,7 +9,9 @@ import global_en from "./translations/en/global.json";
 import global_cat from "./translations/cat/global.json";
 import global_ge from "./translations/ge/global.json";
 import global_fr from "./translations/fr/global.json";
-import global_it from "./translations/it/global.json";
+import global_it from "./translations/it/global.json";  
+import global_ko from "./translations/ko/global.json";
+import global_ja from "./translations/ja/global.json";
 
 
 i18next.init({
@@ -22,6 +24,8 @@ i18next.init({
     ge: { global: global_ge },
     fr: { global: global_fr },
     it: { global: global_it },
+    ko: { global: global_ko },
+    ja: { global: global_ja },
   },
 });
 

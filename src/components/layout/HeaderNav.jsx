@@ -2,11 +2,13 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Es_Flag from "/public/spain_c.png";
-// import Cat_Flag from "/public/catalonia_c.png";
+import Cat_Flag from "/public/catalonia_c.png";
 import En_Flag from "/public/usa_c.png";
 import Fr_Flag from "/public/france_c.png";
 import Ge_Flag from "/public/germany_c.png";
 import It_Flag from "/public/italy_c.png";
+import Ko_Flag from "/public/korea_c.png";
+import Ja_Flag from "/public/japan_c.png";
 import IdiomaIcon from "/public/idioma.png";
 
 export const HeaderNav = () => {
@@ -23,6 +25,9 @@ export const HeaderNav = () => {
     { code: "fr", flag: Fr_Flag },
     { code: "ge", flag: Ge_Flag },
     { code: "it", flag: It_Flag },
+    { code: "ko", flag: Ko_Flag },
+    { code: "ja", flag: Ja_Flag },
+
   ];
 
   const handleLanguageChange = (language) => {
