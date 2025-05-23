@@ -39,3 +39,14 @@
   font-weight: bold;
   z-index: 2;
 }
+
+@media (max-width: 1030px) {
+
+  .intro-title {
+    font-size: 2rem;
+  }
+  .intro-slider {
+    height: 40vh;
+  } 
+
+}

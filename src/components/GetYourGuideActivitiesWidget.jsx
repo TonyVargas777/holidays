@@ -1,27 +1,20 @@
-// GetYourGuideBarcelonaActivitiesWidget.jsx
+// GetYourGuideActivitiesWidget.jsx
 import React, { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
-const GetYourGuideBarcelonaActivitiesWidget = () => {
+const GetYourGuideActivitiesWidget = ({ city }) => {
   const { i18n } = useTranslation();
   const widgetRef = useRef(null);
 
   const getLocaleCode = (lang) => {
     switch (lang) {
-      case "es":
-        return "es-ES";
-      case "en":
-        return "en-US";
-      case "cat":
-        return "ca-ES";
-      case "it":
-        return "it-IT";
-      case "fr":
-        return "fr-FR";
-      case "ge":
-        return "de-DE";        
-      default:
-        return "en-US";
+      case "es": return "es-ES";
+      case "en": return "en-US";
+      case "cat": return "ca-ES";
+      case "it": return "it-IT";
+      case "fr": return "fr-FR";
+      case "ge": return "de-DE";
+      default: return "en-US";
     }
   };
 
@@ -35,9 +28,7 @@ const GetYourGuideBarcelonaActivitiesWidget = () => {
       script.setAttribute("data-gyg-partner-id", "QQKSFZJ");
       document.body.appendChild(script);
     } else {
-      if (window.__gygWidgetLoader__) {
-        window.__gygWidgetLoader__();
-      }
+      if (window.__gygWidgetLoader__) window.__gygWidgetLoader__();
     }
   };
 
@@ -53,19 +44,15 @@ const GetYourGuideBarcelonaActivitiesWidget = () => {
       widget.setAttribute("data-gyg-widget", "activities");
       widget.setAttribute("data-gyg-number-of-items", "12");
       widget.setAttribute("data-gyg-partner-id", "QQKSFZJ");
-      widget.setAttribute("data-gyg-q", "barcelona");
+      widget.setAttribute("data-gyg-q", city.toLowerCase());
 
       widgetRef.current.appendChild(widget);
     }
 
     loadGYGScript();
-  }, [i18n.language]);
+  }, [city, i18n.language]);
 
-  return (
-    <div className="gyg-wrapper">
-      <div ref={widgetRef} className="gyg-widget-container"></div>
-    </div>
-  );
+  return <div className="gyg-wrapper"><div ref={widgetRef} className="gyg-widget-container"></div></div>;
 };
 
-export default GetYourGuideBarcelonaActivitiesWidget;
+export default GetYourGuideActivitiesWidget;

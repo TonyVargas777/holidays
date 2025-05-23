@@ -56,38 +56,7 @@ export const HeaderNav = () => {
               {t("HeaderNav.home")}
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to="/barcelona"
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              {t("Ciudad.Barcelona")}
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/new_york"
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              {t("Ciudad.NuevaYork")}
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/madrid"
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              {t("Ciudad.Madrid")}
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/london"
-              className={({ isActive }) => (isActive ? "active" : "")}
-            >
-              {t("Ciudad.Londres")}
-            </NavLink>
-          </li>
+          
           <li>
             <NavLink
               to="/contacto"

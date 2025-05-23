@@ -4,10 +4,7 @@ import { Inicio } from "../components/Inicio";
 import { Contacto } from "../components/Contacto";
 import { HeaderNav } from "../components/layout/HeaderNav";
 import { Footer } from "../components/layout/Footer";
-import { Barcelona } from "../components/Barcelona";
-import { NewYork } from "../components/NewYork";
-import { Madrid } from "../components/Madrid";
-import { London } from "../components/London";
+import { Ciudad } from "../components/Ciudad"; // ✅ Importa nuevo componente
 
 export const MisRutas = () => {
   return (
@@ -18,14 +15,10 @@ export const MisRutas = () => {
           <Route path="/" element={<Navigate to="/inicio" />} />
           <Route path="/inicio" element={<Inicio />} />
           <Route path="/contacto" element={<Contacto />} />
-          <Route path="/barcelona" element={<Barcelona />} />
-          <Route path="/New_York" element={<NewYork />} />
-          <Route path="/Madrid" element={<Madrid />} />
-          <Route path="/London" element={<London />} />
+          <Route path="/ciudad/:nombre" element={<Ciudad />} /> {/* ✅ Ruta dinámica */}
           <Route path="*" element={<h1 className="education">Error 404</h1>} />
         </Routes>
       </section>
-
       <Footer />
     </BrowserRouter>
   );

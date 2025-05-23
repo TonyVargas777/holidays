@@ -1,40 +1,22 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+// Inicio.jsx
+import React, { useEffect } from "react";
 import { IntroSlider } from "./IntroSlider";
 import { useTranslation } from "react-i18next";
-import GetYourGuideWidget from "./GetYourGuideWidget";
+import { CitySearch } from "./CitySearch";
 
 export const Inicio = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const [t, i18n] = useTranslation("global");
-  // const dummyAttractions = [
-  //   { id: "1", name: "Alhambra de Granada" },
-  //   { id: "2", name: "Museo del Prado" },
-  // ];
-
-
-
+  const [t] = useTranslation("global");
 
   return (
     <div className="works">
       <IntroSlider />
-
-      <GetYourGuideWidget />
-
-      {/* <img src="img/home.avif" className="home_img" alt="home" />         */}
-      {/* <h2>Atracciones turísticas</h2>
-        <ul>
-          {dummyAttractions.map((attraction) => (
-            <li key={attraction.id}>
-              <Link to={`/attraction/${attraction.id}`} className="text-blue-600 underline">
-                {attraction.name}
-              </Link>
-            </li>
-          ))}
-        </ul> */}
+      <div className="work-item">
+        <CitySearch />
+      </div>
     </div>
   );
-}
+};
