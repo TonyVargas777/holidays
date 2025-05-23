@@ -1,39 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+  <!-- Página de inicio -->
   <url>
-    <loc>https://holidays-self.vercel.app//</loc>
-    <lastmod>2025-05-20</lastmod>
+    <loc>https://holidays-self.vercel.app/inicio</loc>
+    <lastmod>2025-05-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://holidays-self.vercel.app/es/inicio" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://holidays-self.vercel.app/en/home" />
+    <xhtml:link rel="alternate" hreflang="ca" href="https://holidays-self.vercel.app/ca/inici" />
   </url>
 
+  <!-- Página de Barcelona -->
   <url>
-    <loc>https://holidays-self.vercel.app//barcelona</loc>
-    <lastmod>2025-05-20</lastmod>
+    <loc>https://holidays-self.vercel.app/barcelona</loc>
+    <lastmod>2025-05-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
+  <!-- Página de Madrid -->
   <url>
-    <loc>https://holidays-self.vercel.app//madrid</loc>
-    <lastmod>2025-05-20</lastmod>
+    <loc>https://holidays-self.vercel.app/madrid</loc>
+    <lastmod>2025-05-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
+  <!-- Página de Nueva York -->
   <url>
-    <loc>https://holidays-self.vercel.app//nueva-york</loc>
-    <lastmod>2025-05-20</lastmod>
+    <loc>https://holidays-self.vercel.app/nuevayork</loc>
+    <lastmod>2025-05-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
+  <!-- Página de Londres -->
   <url>
-    <loc>https://holidays-self.vercel.app//londres</loc>
-    <lastmod>2025-05-20</lastmod>
+    <loc>https://holidays-self.vercel.app/londres</loc>
+    <lastmod>2025-05-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-
 </urlset>

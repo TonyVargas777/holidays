@@ -22,7 +22,7 @@ export const MisRutas = () => {
           <Route path="/New_York" element={<NewYork />} />
           <Route path="/Madrid" element={<Madrid />} />
           <Route path="/London" element={<London />} />
-          <Route path="*" element={<h1 className="home">Error 404</h1>} />
+          <Route path="*" element={<h1 className="education">Error 404</h1>} />
         </Routes>
       </section>
 
