@@ -3,21 +3,16 @@ import "./IntroSlider.css";
 
 const images = [
   "/img/sagrada_familia.avif",
-  "/img/newyork1.jpg",
-  "/img/madrid1.avif",
-  "/img/london1.jpg",
-
-  "/img/casa_batllo.avif",
   "/img/newyork2.avif",
-  "/img/madrid2.avif",
-  "/img/london2.jpg",
-
-  "/img/la_pedrera.avif",
-  "/img/newyork3.avif",
-  "/img/madrid3.avif",
   "/img/london3.jpeg",
-
-  "/img/park_guell.avif"  
+  "/img/amsterdam.png",
+  "/img/venecia.webp",
+  "/img/estambul.jpg",
+  "/img/vaticano.jpg",
+  "/img/marrakech.jpeg",
+  "/img/dubai.jpg",
+  "/img/madrid1.avif",
+  "/img/roma.jpg",
 ];
 
 export const IntroSlider = () => {

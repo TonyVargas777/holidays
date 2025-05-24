@@ -9,6 +9,7 @@ import Ge_Flag from "/public/germany_c.png";
 import It_Flag from "/public/italy_c.png";
 import Ko_Flag from "/public/korea_c.png";
 import Ja_Flag from "/public/japan_c.png";
+import Ru_Flag from "/public/rusia_c.png";
 import IdiomaIcon from "/public/idioma.png";
 
 export const HeaderNav = () => {
@@ -27,6 +28,7 @@ export const HeaderNav = () => {
     { code: "it", flag: It_Flag },
     { code: "ko", flag: Ko_Flag },
     { code: "ja", flag: Ja_Flag },
+    { code: "ru", flag: Ru_Flag },
 
   ];
 
@@ -61,7 +63,7 @@ export const HeaderNav = () => {
               {t("HeaderNav.home")}
             </NavLink>
           </li>
-          
+
           <li>
             <NavLink
               to="/contacto"

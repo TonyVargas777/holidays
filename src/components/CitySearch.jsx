@@ -25,12 +25,12 @@ const baseCities = [
 ];
 
 function normalize(text) {
-  return text.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
+  return text.normalize("NFD").replace(/\p{Diacritic}/gu, "").toUpperCase();
 }
 
 export const CitySearch = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const navigate = useNavigate();  
+  const navigate = useNavigate();
   const [t, i18n] = useTranslation("global");
 
   const filteredCities = baseCities.filter(city =>
@@ -49,12 +49,12 @@ export const CitySearch = () => {
         placeholder={t("Buscar.Ciudad")}
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        className="border p-2 rounded w-full mb-2"
+        className="city-search-input"
       />
       <ul>
         {filteredCities.map((city, index) => (
           <li
-            key={index}            
+            key={index}
             onClick={() => handleSelect(city)}
           >
             {t(`Ciudades.${city}`)}

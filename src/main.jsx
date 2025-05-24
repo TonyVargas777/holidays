@@ -9,9 +9,10 @@ import global_en from "./translations/en/global.json";
 import global_cat from "./translations/cat/global.json";
 import global_ge from "./translations/ge/global.json";
 import global_fr from "./translations/fr/global.json";
-import global_it from "./translations/it/global.json";  
+import global_it from "./translations/it/global.json";
 import global_ko from "./translations/ko/global.json";
 import global_ja from "./translations/ja/global.json";
+import global_ru from "./translations/ru/global.json";
 
 
 i18next.init({
@@ -26,14 +27,15 @@ i18next.init({
     it: { global: global_it },
     ko: { global: global_ko },
     ja: { global: global_ja },
+    ru: { global: global_ru },
   },
 });
 
 const Root = () => {
- 
+
 
   return (
-    <I18nextProvider i18n={i18next}>      
+    <I18nextProvider i18n={i18next}>
       <App />
     </I18nextProvider>
   );
