@@ -26,9 +26,13 @@ const BotonSubir = () => {
   };
 
   return (
-    <div className="botonSubir" onClick={handleScrollToTop}>
+    <button
+      className="botonSubir"
+      onClick={handleScrollToTop}
+      aria-label="Scroll to top" // Añadido aria-label
+    >
       <span>⬆️</span>
-    </div>
+    </button>
   );
 };
 

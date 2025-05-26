@@ -31,7 +31,7 @@ export const IntroSlider = () => {
         <img
           key={index}
           src={src}
-          alt={`slide-${index}`}
+          alt="" // Changed alt text to empty string
           className={`slide ${index === current ? "active" : ""}`}
         />
       ))}

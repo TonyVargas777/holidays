@@ -96,9 +96,53 @@
     "Ámsterdam": "Ámsterdam"
   },
   "Contacto": {
-    "title": "CONTACT"
+    "title": "CONTACTO"
   },
   "Buscar": {
     "Ciudad": "Buscar ciudad..."
+  },
+  "Site": {
+    "name": "Plan Your Holidays"
+  },
+  "MetaTags": {
+    "Inicio": {
+      "title": "Plan Your Holidays | Reserva Tus Vacaciones",
+      "description": "Descubre y reserva actividades turísticas inolvidables en Barcelona, Madrid, Nueva York y Londres con Plan Your Holidays.",
+      "ogTitle": "Plan Your Holidays | Tu Próxima Aventura Comienza Aquí",
+      "ogDescription": "Explora los mejores destinos y reserva actividades increíbles con Plan Your Holidays.",
+      "twitterTitle": "Plan Your Holidays | La Aventura Te Espera",
+      "twitterDescription": "Encuentra y reserva tus actividades y tours vacacionales perfectos en todo el mundo."
+    },
+    "Ciudad": {
+      "title": "Tours y Actividades en {cityName} | Plan Your Holidays",
+      "description": "Reserva emocionantes tours y actividades en {cityName}.",
+      "ogTitle": "Aventuras en {cityName} | {siteName}",
+      "ogDescription": "Descubre las principales atracciones y reserva tours en {cityName}.",
+      "twitterTitle": "Explora {cityName} con {siteName}",
+      "twitterDescription": "Tu próxima aventura en {cityName} comienza aquí. Reserva tours y actividades."
+    },
+    "Contacto": {
+      "title": "Contáctanos | Plan Your Holidays",
+      "description": "Ponte en contacto con Plan Your Holidays para cualquier consulta o soporte.",
+      "ogTitle": "Contacta con Plan Your Holidays",
+      "ogDescription": "Contáctanos para ayudarte a planificar tu próxima aventura.",
+      "twitterTitle": "Contáctanos - Plan Your Holidays",
+      "twitterDescription": "¿Preguntas o comentarios? Contacta al equipo de Plan Your Holidays."
+    }
+  },
+  "HeaderNav": {
+    "home": "INICIO",
+    "contact": "CONTACTO",
+    "homeLink": {
+      "es": "/inicio",
+      "en": "/home",
+      "cat": "/inici",
+      "fr": "/accueil",
+      "ge": "/startseite",
+      "it": "/inizio-it",
+      "ko": "/home-ko",
+      "ja": "/home-ja",
+      "ru": "/home-ru"
+    }
   }
 }

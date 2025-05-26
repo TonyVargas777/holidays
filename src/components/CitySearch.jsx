@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 
-const baseCities = [
+// Constante baseCities movida fuera del componente y renombrada
+const BASE_CITIES = [
   // Europa
   "Ámsterdam", "Atenas", "Barcelona", "Berlín", "Bruselas", "Budapest", "Copenhague", "Dubrovnik", "Dublín", "Edimburgo",
   "Estambul", "Florencia", "Lisboa", "Londres", "Madrid", "Milán", "Múnich", "Oporto", "París", "Praga",
@@ -33,7 +34,7 @@ export const CitySearch = () => {
   const navigate = useNavigate();
   const [t, i18n] = useTranslation("global");
 
-  const filteredCities = baseCities.filter(city =>
+  const filteredCities = BASE_CITIES.filter(city =>
     normalize(t(`Ciudades.${city}`)).includes(normalize(searchTerm))
   );
 
@@ -53,11 +54,13 @@ export const CitySearch = () => {
       />
       <ul>
         {filteredCities.map((city, index) => (
-          <li
-            key={index}
-            onClick={() => handleSelect(city)}
-          >
-            {t(`Ciudades.${city}`)}
+          <li key={index}>
+            <button
+              onClick={() => handleSelect(city)}
+              className="city-select-button"
+            >
+              {t(`Ciudades.${city}`)}
+            </button>
           </li>
         ))}
       </ul>

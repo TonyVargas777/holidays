@@ -99,5 +99,49 @@
   },
   "Buscar": {
     "Ciudad": "Поиск города..."
+  },
+  "Site": {
+    "name": "Plan Your Holidays"
+  },
+  "MetaTags": {
+    "Inicio": {
+      "title": "Plan Your Holidays | Book Your Getaway",
+      "description": "Discover and book unforgettable tourist activities in Barcelona, Madrid, New York, and London with Plan Your Holidays.",
+      "ogTitle": "Plan Your Holidays | Your Next Adventure Starts Here",
+      "ogDescription": "Explore top destinations and book amazing activities with Plan Your Holidays.",
+      "twitterTitle": "Plan Your Holidays | Adventure Awaits",
+      "twitterDescription": "Find and book your perfect holiday activities and tours worldwide."
+    },
+    "Ciudad": {
+      "title": "{cityName} Tours & Activities | Plan Your Holidays",
+      "description": "Book exciting tours and activities in {cityName}.",
+      "ogTitle": "{cityName} Adventures | {siteName}",
+      "ogDescription": "Discover top attractions and book tours in {cityName}.",
+      "twitterTitle": "Explore {cityName} with {siteName}",
+      "twitterDescription": "Your next adventure in {cityName} starts here. Book tours and activities."
+    },
+    "Contacto": {
+      "title": "Contact Us | Plan Your Holidays",
+      "description": "Get in touch with Plan Your Holidays for any inquiries or support.",
+      "ogTitle": "Contact Plan Your Holidays",
+      "ogDescription": "Reach out to us for help planning your next adventure.",
+      "twitterTitle": "Contact Us - Plan Your Holidays",
+      "twitterDescription": "Questions or feedback? Contact the Plan Your Holidays team."
+    }
+  },
+  "HeaderNav": {
+    "home": "Главная",
+    "contact": "Контакты",
+    "homeLink": {
+      "es": "/inicio",
+      "en": "/home",
+      "cat": "/inici",
+      "fr": "/accueil",
+      "ge": "/startseite",
+      "it": "/inizio-it",
+      "ko": "/home-ko",
+      "ja": "/home-ja",
+      "ru": "/home-ru"
+    }
   }
 }

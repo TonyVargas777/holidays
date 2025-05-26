@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://holidays-self.vercel.app/inicio
+Disallow:
+Sitemap: https://www.tonyvargasdev.com/sitemap.xml

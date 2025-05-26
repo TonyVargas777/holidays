@@ -12,25 +12,25 @@ import Ja_Flag from "/public/japan_c.png";
 import Ru_Flag from "/public/rusia_c.png";
 import IdiomaIcon from "/public/idioma.png";
 
+// Constante languages movida fuera del componente y renombrada
+const LANGUAGES = [
+  { code: "es", flag: Es_Flag },
+  // { code: "cat", flag: Cat_Flag },
+  { code: "en", flag: En_Flag },
+  { code: "fr", flag: Fr_Flag },
+  { code: "ge", flag: Ge_Flag },
+  { code: "it", flag: It_Flag },
+  { code: "ko", flag: Ko_Flag },
+  { code: "ja", flag: Ja_Flag },
+  { code: "ru", flag: Ru_Flag },
+];
+
 export const HeaderNav = () => {
   const [t, i18n] = useTranslation("global");
   const [showPopup, setShowPopup] = useState(false);
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
   const currentLanguage = localStorage.getItem("language") || "es";
-
-  const languages = [
-    { code: "es", flag: Es_Flag },
-    // { code: "cat", flag: Cat_Flag },
-    { code: "en", flag: En_Flag },
-    { code: "fr", flag: Fr_Flag },
-    { code: "ge", flag: Ge_Flag },
-    { code: "it", flag: It_Flag },
-    { code: "ko", flag: Ko_Flag },
-    { code: "ja", flag: Ja_Flag },
-    { code: "ru", flag: Ru_Flag },
-
-  ];
 
   const handleLanguageChange = (language) => {
     i18n.changeLanguage(language);
@@ -102,7 +102,7 @@ export const HeaderNav = () => {
       {showPopup && (
         <div className="language-popup">
           <div className="popup-content">
-            {languages.map((lang) => (
+            {LANGUAGES.map((lang) => (
               <button
                 key={lang.code}
                 className="language-option"

@@ -10,16 +10,17 @@ export const Footer = () => {
           <div>
             <a
               href="https://www.getyourguide.com?partner_id=QQKSFZJ&cmp=share_to_earn"
-              target="blank"
+              target="_blank"
+              rel="noopener noreferrer" // Added rel attribute
               height="20px"
               width="20px"
-              alt="www.getyourguide.com?partner_id=QQKSFZJ&cmp=share_to_earn"
+              alt="GetYourGuide" // Changed alt text
             >
               <img
                 className="red"
                 align="center"
                 src="/email.png"
-                alt="www.getyourguide.com?partner_id=QQKSFZJ&cmp=share_to_earn"
+                alt="GetYourGuide" // Changed alt text
                 height="20px"
                 width="20px"
               ></img>
