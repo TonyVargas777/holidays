@@ -51,7 +51,7 @@ export const HeaderNav = () => {
   return (
     <header className="header">
 
-      <img src="/tituloPYH.png" className="titulo" alt="PLAN YOUR HOLIDAYS" />
+      <img src="/tituloPYH.webp" className="titulo" alt="PLAN YOUR HOLIDAYS" />
 
       <nav>
         <ul>

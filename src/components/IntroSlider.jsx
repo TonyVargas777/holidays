@@ -2,17 +2,17 @@ import React, { useEffect, useState } from "react";
 import "./IntroSlider.css";
 
 const images = [
-  "/img/sagrada_familia.avif",
-  "/img/newyork2.avif",
-  "/img/london3.jpeg",
-  "/img/amsterdam.png",
+  "/img/sagrada_familia.webp",
+  "/img/newyork2.webp",
+  "/img/london3.webp",
+  "/img/amsterdam.webp",
   "/img/venecia.webp",
-  "/img/estambul.jpg",
-  "/img/vaticano.jpg",
-  "/img/marrakech.jpeg",
-  "/img/dubai.jpg",
-  "/img/madrid1.avif",
-  "/img/roma.jpg",
+  "/img/estambul.webp",
+  "/img/vaticano.webp",
+  "/img/marrakech.webp",
+  "/img/dubai.webp",
+  "/img/madrid1.webp",
+  "/img/roma.webp",
 ];
 
 export const IntroSlider = () => {

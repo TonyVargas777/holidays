@@ -21,7 +21,7 @@
 .light {
   color: var(--color-text-light);
   background-color: var(--color-bg-light);
-  background-image: url("/fondo_light.png");
+  background-image: url("/fondo_light.webp");
   transition: all 0.3s ease-in-out;
 }
 
@@ -29,7 +29,7 @@
 .dark {
   color: var(--color-text-dark);
   background-color: var(--color-bg-dark);
-  background-image: url("/fondo_dark.png");
+  background-image: url("/fondo_dark.webp");
   transition: all 0.3s ease-in-out;
 }
 
