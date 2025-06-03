@@ -35,7 +35,8 @@ export const IntroSlider = () => {
           className={`slide ${index === current ? "active" : ""}`}
         />
       ))}
-      <h1 className="intro-title">PLAN YOUR HOLIDAYS</h1>
+      <a href="https://www.getyourguide.com?partner_id=QQKSFZJ&cmp=share_to_earn" target="_blank" rel="noopener noreferrer" className="intro-title">
+      <h1 className="intro-title">PLAN YOUR HOLIDAYS</h1></a>
     </div>
   );
 };
